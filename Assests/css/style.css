@@ -1,0 +1,506 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* the beginnning of navbar section */
+nav {
+    /* background: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+}
+
+#nav_background.scrolled {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  color: #000 !important;
+  padding: 20px;
+}
+
+#nav_background.scrolled .nav_links .ul_nav_links li a{
+  color: #000 !important;
+}
+
+nav .logo img {
+    width: 180px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+
+/* navbar links */
+nav .nav_links .ul_nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+
+nav .nav_links .ul_nav_links .show_dropdown:hover  .hide_submenu{
+    display: block;
+    position: absolute;
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+nav .nav_links .ul_nav_links li {
+    margin-right: 30px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav .nav_links .ul_nav_links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .nav_links .ul_nav_links li a:hover{
+    color: #38bfc3;
+}
+
+nav .nav_links .ul_nav_links .searchbar{
+    background: #C6C628;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav_links .ul_nav_links .searchbar:hover{
+    background: #0f5395;
+}
+
+nav .nav_links .ul_nav_links .searchbar i:hover{
+    background: #fff;
+}
+
+/* submenu design section */
+nav .nav_links .ul_nav_links .hide_submenu{
+    display: none;
+    transition: 0.25s ease;
+    transform:  0.25s ease;
+}
+
+nav .nav_links .ul_nav_links .hide_submenu li{
+    margin: 10px;
+}
+
+nav .nav_links .ul_nav_links .hide_submenu li a{
+    color: #000;
+    font-weight: 600;
+}
+
+
+/* hero section  */
+section .banner_context{
+    position: absolute;
+    top: 0;
+    margin-top: 470px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section .banner_context h1{
+    color: #fff;
+    font-size: 32px;
+}
+
+section .banner_context p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+section .banner_context .banner_context_btn{
+    margin-top: 20px;
+}
+
+section .banner_context .banner_context_btn a{
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+section .banner_context .banner_context_btn a button{
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+section .banner_context .banner_context_btn a button i{
+    margin-left: 10px;
+}
+
+section .banner_context .banner_context_btn a .partener{
+    background: #442244;
+}
+
+section .banner_context .banner_context_btn a .explorer{
+    background: #c6c628;
+}
+
+section .banner_context .banner_context_btn a .talent{
+    background: #fff;
+    color: #442244;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+section .banner_context .banner_context_btn a .talent:hover{
+    background: #002a48;
+    color: #fff;
+}
+
+section .banner_context .banner_context_btn a button:hover{
+    background: #fff;
+    color: #442244;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*  */
+/* About refactory academy */
+.about_container{
+    background: #f4f7fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+.about_container .about_text{
+    width: 35%;
+    margin-left: 150px;
+}
+
+.about_container .about_text h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: #663367;
+}
+
+.about_container .about_text h2{
+    font-weight: 1000;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #38bfc3;
+}
+
+.about_container .about_text p{
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 27px;
+}
+
+.about_container .about_text a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.about_container .about_text a button{
+    color: #fff;
+    background: #C6C628;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.about_container .about_text a button:hover{
+    background: #002a48;
+}
+
+.about_container .about_text a i{
+    margin-left: 90px;
+}
+
+
+.about_container .about_img{
+    width: 50%;
+}
+
+.about_container .about_img img{
+    width: 80%;
+}
+
+/* featured course on refactory academy */
+.ft_courses_cont{
+    margin-top: 80px;
+}
+
+.ft_courses_cont p{
+    text-align: center;
+    color: #38bfc3;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.ft_courses_cont h1{
+    text-align: center;
+    color: #663367;
+    font-size: 28px;
+    margin-top: 7px;
+}
+
+.ft_courses_cont .courses_container{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ft_courses_cont .courses_container .course_card{
+    width: 22%;
+    margin: 20px;
+}
+
+.ft_courses_cont .courses_container .course_card img{
+    width: 100%;
+}
+
+.ft_courses_cont .courses_container .course_card h2{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #663367;
+}
+
+.ft_courses_cont .courses_container .course_card p{
+    text-align: left;
+    font-weight: 100;
+    margin-top: 7px;
+    line-height: 25px;
+    color: #000;
+}
+
+.ft_courses_cont .courses_container .course_card a button{
+    margin-top: 10px;
+    background: #C6C628;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.ft_courses_cont .courses_container .course_card a button:hover{
+    background: #0f5395;
+}
+
+
+/* footer section */
+footer{
+    background-image: url("../imgs/footer\ bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 180px;
+}
+
+footer .footer_container{
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* footer about us  */
+footer .footer_container .about_us{
+    width: 20%;
+}
+
+footer .footer_container .about_us img{
+    width: 70%;
+}
+
+footer .footer_container .about_us p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+footer .footer_container .about_us .social_media{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: -40px;
+}
+
+footer .footer_container .about_us .social_media a{
+    background: #C6C628;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer links */
+footer .footer_container .link_conta{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_container .link_conta h2{
+    color: #38bfc3;
+}
+
+footer .footer_container .link_conta a{
+    color: #fff;
+    margin-top: 8px;
+    text-decoration: none;
+
+}
+
+/* contact us */
+footer .footer_container .contact_us{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_container .contact_us h2{
+    color: #38bfc3;
+    text-decoration: none;
+}
+
+footer .footer_container .contact_us a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+
+
+/* visit_us */
+footer .footer_container .visit_us{
+    width: 20%;
+}
+
+footer .footer_container .visit_us h2{
+    color: #38bfc3;
+}
+
+footer .footer_container .visit_us p{
+    color: #fff;
+    line-height: 27px;
+}
+
+footer .footer_container .visit_us a{
+    color: #38bfc3;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+footer hr{
+    margin-top: 40px;
+}
+
+footer .copyright{
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* back to top */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: #38bfc3;        /* you can change */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    display: none;           /* hidden default */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 9999;
+}
+
+#backToTop:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* swiperjs css */
+.swiper {
+    width: 100%;
+    height: 95vh;
+}
+
+.swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 10s ease;
+}
+
+/* When slide becomes active → Zoom in */
+.swiper-slide-active img {
+    transform: scale(1.2);
+}
