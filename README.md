@@ -41,14 +41,6 @@ This repo contains HTML, CSS (and possibly assets) for a clone of the Refactory 
 
 4. Optionally: start modifying code (HTML/CSS/assets) to learn or customize.
 
-## 🧑‍💻 How It Helps You (Given Your Current Interests)
-
-Since you’re learning Node.js, git/GitHub, and possibly front-end frameworks:
-
-* This static clone is a good opportunity to **observe and understand real-world static site structure**, especially HTML + CSS + assets.
-* You can **practice using git and GitHub workflow** — clone, commit changes, push, branch, etc.
-* Later, you could **turn this into a dynamic or component-driven site** (with Vue.js + a Node.js backend) — a great exercise bridging your learning path.
-
 ## ⚠️ Disclaimer
 
 * This is a *clone* of an existing site — likely without official permission. Use it only for **educational purposes**.
