@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="./Assests/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--  -->
+    <link rel="shortcut icon" href="./Assests/imgs/Refactory-Logo favicon.png" type="image/x-icon">
+
+    <!-- purecount cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
 
 
 
@@ -25,7 +31,19 @@
         </div>
 
         <div class="nav_links">
-            <ul class="ul_nav_links">
+            <ul class="ul_nav_links" id="navMenu">
+                <!-- hide the top navigation on bigger screen -->
+                <div class="small_screen">
+                    <div class="small_searchbar">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </div>
+
+                    <div class="small_closebtn">
+                        <i class="fas fa-xmark" ></i>
+                    </div>
+                </div>
+
+
                 <!-- About us dropdown menu -->
                 <li class="show_dropdown"><a href=""> About Us <i class="fas fa-angle-down"></i></a>
                     <ul class="hide_submenu">
@@ -62,6 +80,10 @@
                 <li class="searchbar"><a href=""><i class="fas fa-magnifying-glass"></i></a></li>
             </ul>
         </div>
+
+        <div class="toggle_btn" id="navToggle">
+            <i class="fas fa-bars-staggered"></i>
+        </div>
     </nav>
 
     <section class="banner">
@@ -80,16 +102,17 @@
         </div>
 
         <div class="banner_context">
-            <h1> Transforming Africa's Tech Talent for the Future  </h1>
+            <h1> Transforming Africa's Tech Talent for the Future </h1>
             <p> Tech programs by and for the Industry </p>
 
             <div class="banner_context_btn">
                 <a href=""><button class="partener"> Partner with us <i class="fas fa-arrow-right"></i></button></a>
-                <a href=""><button class="explorer"> Explore Programs  <i class="fas fa-arrow-right"></i></button></a>
-                <a href=""><button class="talent"> Hire Talents  <i class="fas fa-arrow-right"></i></button></a>
+                <a href=""><button class="explorer"> Explore Programs <i class="fas fa-arrow-right"></i></button></a>
+                <a href=""><button class="talent"> Hire Talents <i class="fas fa-arrow-right"></i></button></a>
             </div>
         </div>
-    </section>
+    </section> 
+
 
     <!-- about refactory Academy  -->
     <div class="about_container">
@@ -151,20 +174,95 @@
         </div>
     </div>
 
-    <br><br><br>
+
+    <!-- success rate section  -->
+    <div class="success_conta">
+        <div class="success_img">
+            <div class="succ_flex">
+                <img src="./Assests/imgs/Refactory - Skilling African Tech Talent - 2.png" alt="student image" srcset="">
+                <img src="./Assests/imgs/banner img-3.png" alt="student success image" srcset="" class="top_image">
+            </div>
+        </div>
+
+        <div class="success_count">
+            <h2> Refactory’s Success! </h2>
+
+            <div class="count_conta">
+                <div class="count">
+                    <h1 data-purecounter-start="0" data-purecounter-end="814" data-purecounter-duration="2" class="purecounter" data-purecounter-suffix="+"></h1>
+                    <p> Graduates </p>
+                </div>
+
+                <div class="count">
+                    <h1 data-purecounter-start="0" data-purecounter-end="91" data-purecounter-duration="2" class="purecounter" data-purecounter-suffix="%"></h1>
+                    <p> Employment rates </p>
+                </div>
+
+                <div class="count">
+                    <h1 data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="2" class="purecounter" data-purecounter-suffix="%"></h1>
+                    <p> Student satisfactory rate </p>
+                </div>
+
+                <div class="count">
+                    <h1 data-purecounter-start="0" data-purecounter-end="3000" data-purecounter-duration="2" class="purecounter" data-purecounter-suffix="+"></h1>
+                    <p> Impacted through outreach activities </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- program section -->
+    <div class="program_container">
+        <div class="prog_left_cont">
+            <div class="prog_decri">
+            <h1> 10X Program </h1>
+            <h2> Inclusively Equipping Young Women in Advanced Digital Skills & Connecting Them to Dignified Work </h2>
+            <p> Refactory Academy is empowering young women with relevant tech skills and life-changing opportunities, equipping them to thrive in the digital economy as individuals and as business owners. </p>
+            </div>
+
+            <div class="program_supposers">
+                <img src="./Assests/imgs/Outbox-1.png" alt="Outbox logo" srcset="">
+                <img src="./Assests/imgs/UNCDF.png" alt="UNCDF logo" srcset="">
+                <img src="./Assests/imgs/Mastercard-Foundation.png" alt="Mastercard-Foundation logo" srcset="">
+            </div>
+
+            <div class="top">
+                <a href=""> Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="program_img">
+            <img src="./Assests/imgs/MAL_6260-2048x1365.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+
+
+    <div class="group_container">
+        <div class="group_conta">
+            <img src="./Assests/imgs/UG-Dev-Summit-Logo-White-1920x825.png" alt="" srcset="">
+
+            <!--  -->
+            <h2> Convener of the UG Dev Summit </h2>
+
+            <!--  -->
+            <a href=""> Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
 
     <footer>
         <div class="footer_container">
             <div class="about_us">
                 <img src="./Assests/imgs/Refactory-Logo-White.png" alt="" srcset="">
-                <p> Refactory is a Tech skilling Academy. We are the industry’s blueprint for hiring software talent. </p>
+                <p> Refactory is a Tech skilling Academy. We are the industry’s blueprint for hiring software talent.
+                </p>
 
                 <div class="social_media">
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href="" style="background-color: blue;"><i class="fab fa-facebook"></i></a>
+                    <a href="" style="background-color: dodgerblue;"><i class="fab fa-twitter"></i></a>
+                    <a href="" style="background-color: darkslategrey;"><i class="fab fa-instagram"></i></a>
+                    <a href="" style="background-color: darkblue;"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="" style="background-color: red;"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -187,7 +285,8 @@
 
             <div class="visit_us">
                 <h2> Visit us </h2>
-                <p> Refactory Academy, 2nd Floor, Clarke International University. Kawagga Close off Kalungi Road, Muyenga </p><br>
+                <p> Refactory Academy, 2nd Floor, Clarke International University. Kawagga Close off Kalungi Road,
+                    Muyenga </p><br>
                 <a href=""> Location </a>
             </div>
         </div>
@@ -198,14 +297,23 @@
 
 
     <!-- back to top  -->
-    <i class="fas fa-angle-up" id="backToTop"></i>
+    <!-- <i class="fas fa-angle-up" id="backToTop"></i> -->
+    <button id="backToTop"><i class="fas fa-angle-up"></i></button>
 
     <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
 
+    <!-- purecount cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+    <!--  -->
+    <script src="./Assests/js/js.js"></script>
+
+
 
     <script>
+        // swiper function
         const swiper = new Swiper(".mySwiper", {
             effect: "fade",
             loop: true,
@@ -216,7 +324,8 @@
             },
         });
 
-        //
+
+        //change nav background on scroll function
         const navbar = document.getElementById("nav_background");
         const logo = document.getElementById("logo");
 
@@ -230,26 +339,33 @@
             }
         });
 
-        
-        const backToTopBtn = document.getElementById("backToTop");
 
-            // Show button after scrolling
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 200) {
-                    backToTopBtn.style.display = "flex";
-                } else {
-                    backToTopBtn.style.display = "none";
-                }
-            });
+        // backtotop function
+        const backToTop = document.getElementById("backToTop");
 
-            // Smooth scroll to top
-            backToTopBtn.addEventListener("click", () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 250) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
             });
+        });
+
+            // Ensure DOM loaded before initializing
+    document.addEventListener('DOMContentLoaded', function () {
+      // If PureCounter already auto-initialized it's harmless to call again
+      new PureCounter();
+    });
+
     </script>
+
 
 </body>
 

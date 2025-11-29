@@ -8,7 +8,6 @@
 
 /* the beginnning of navbar section */
 nav {
-    /* background: yellow; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,14 +19,14 @@ nav {
 }
 
 #nav_background.scrolled {
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  color: #000 !important;
-  padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #000 !important;
+    padding: 20px;
 }
 
-#nav_background.scrolled .nav_links .ul_nav_links li a{
-  color: #000 !important;
+#nav_background.scrolled .nav_links .ul_nav_links li a {
+    color: #000 !important;
 }
 
 nav .logo img {
@@ -45,7 +44,7 @@ nav .nav_links .ul_nav_links {
     margin-right: 70px;
 }
 
-nav .nav_links .ul_nav_links .show_dropdown:hover  .hide_submenu{
+nav .nav_links .ul_nav_links .show_dropdown:hover .hide_submenu {
     display: block;
     position: absolute;
     background: #fff;
@@ -62,16 +61,16 @@ nav .nav_links .ul_nav_links li {
     font-size: 15px;
 }
 
-nav .nav_links .ul_nav_links li a{
+nav .nav_links .ul_nav_links li a {
     text-decoration: none;
     color: #fff;
 }
 
-nav .nav_links .ul_nav_links li a:hover{
+nav .nav_links .ul_nav_links li a:hover {
     color: #38bfc3;
 }
 
-nav .nav_links .ul_nav_links .searchbar{
+nav .nav_links .ul_nav_links .searchbar {
     background: #C6C628;
     width: 50px;
     height: 50px;
@@ -82,33 +81,51 @@ nav .nav_links .ul_nav_links .searchbar{
     align-items: center;
 }
 
-nav .nav_links .ul_nav_links .searchbar:hover{
+nav .nav_links .ul_nav_links .searchbar:hover {
     background: #0f5395;
 }
 
-nav .nav_links .ul_nav_links .searchbar i:hover{
+nav .nav_links .ul_nav_links .searchbar i:hover {
     background: #fff;
 }
 
 /* submenu design section */
-nav .nav_links .ul_nav_links .hide_submenu{
+nav .nav_links .ul_nav_links .hide_submenu {
     display: none;
     transition: 0.25s ease;
-    transform:  0.25s ease;
+    transform: 0.25s ease;
 }
 
-nav .nav_links .ul_nav_links .hide_submenu li{
+nav .nav_links .ul_nav_links .hide_submenu li {
     margin: 10px;
 }
 
-nav .nav_links .ul_nav_links .hide_submenu li a{
+nav .nav_links .ul_nav_links .hide_submenu li a {
     color: #000;
     font-weight: 600;
 }
 
+/* ****************************** */
+/* hidding the toggle btn on bigger screen */
+nav .toggle_btn{
+    display: none;
+}
+
+nav .small_screen{
+    display: none;
+}
+
+
+/* ********************** */
+/* ******************** */
+/* show menu */
+nav .nav_links.show {
+    margin-right: 0px;
+}
+
 
 /* hero section  */
-section .banner_context{
+section .banner_context {
     position: absolute;
     top: 0;
     margin-top: 470px;
@@ -120,28 +137,28 @@ section .banner_context{
     width: 100%;
 }
 
-section .banner_context h1{
+section .banner_context h1 {
     color: #fff;
     font-size: 32px;
 }
 
-section .banner_context p{
+section .banner_context p {
     color: #fff;
     font-size: 22px;
     font-weight: 600;
 }
 
-section .banner_context .banner_context_btn{
+section .banner_context .banner_context_btn {
     margin-top: 20px;
 }
 
-section .banner_context .banner_context_btn a{
+section .banner_context .banner_context_btn a {
     color: #fff;
     padding: 10px;
     border-radius: 6px;
 }
 
-section .banner_context .banner_context_btn a button{
+section .banner_context .banner_context_btn a button {
     color: #fff;
     padding: 10px 30px;
     border-radius: 6px;
@@ -150,31 +167,31 @@ section .banner_context .banner_context_btn a button{
     font-size: 16px;
 }
 
-section .banner_context .banner_context_btn a button i{
+section .banner_context .banner_context_btn a button i {
     margin-left: 10px;
 }
 
-section .banner_context .banner_context_btn a .partener{
+section .banner_context .banner_context_btn a .partener {
     background: #442244;
 }
 
-section .banner_context .banner_context_btn a .explorer{
+section .banner_context .banner_context_btn a .explorer {
     background: #c6c628;
 }
 
-section .banner_context .banner_context_btn a .talent{
+section .banner_context .banner_context_btn a .talent {
     background: #fff;
     color: #442244;
     font-weight: 500;
     font-size: 16px;
 }
 
-section .banner_context .banner_context_btn a .talent:hover{
+section .banner_context .banner_context_btn a .talent:hover {
     background: #002a48;
     color: #fff;
 }
 
-section .banner_context .banner_context_btn a button:hover{
+section .banner_context .banner_context_btn a button:hover {
     background: #fff;
     color: #442244;
     font-weight: 500;
@@ -183,7 +200,7 @@ section .banner_context .banner_context_btn a button:hover{
 
 /*  */
 /* About refactory academy */
-.about_container{
+.about_container {
     background: #f4f7fa;
     display: flex;
     justify-content: space-between;
@@ -192,38 +209,38 @@ section .banner_context .banner_context_btn a button:hover{
     width: 100%;
 }
 
-.about_container .about_text{
+.about_container .about_text {
     width: 35%;
     margin-left: 150px;
 }
 
-.about_container .about_text h1{
+.about_container .about_text h1 {
     font-weight: bold;
     font-size: 30px;
     color: #663367;
 }
 
-.about_container .about_text h2{
+.about_container .about_text h2 {
     font-weight: 1000;
     font-size: 18px;
     margin-top: 10px;
     color: #38bfc3;
 }
 
-.about_container .about_text p{
+.about_container .about_text p {
     font-weight: 100;
     font-size: 18px;
     margin-top: 10px;
     line-height: 27px;
 }
 
-.about_container .about_text a{
+.about_container .about_text a {
     color: #fff;
     text-decoration: none;
     font-weight: bolder;
 }
 
-.about_container .about_text a button{
+.about_container .about_text a button {
     color: #fff;
     background: #C6C628;
     font-weight: bold;
@@ -235,43 +252,45 @@ section .banner_context .banner_context_btn a button:hover{
     font-size: 16px;
 }
 
-.about_container .about_text a button:hover{
+.about_container .about_text a button:hover {
     background: #002a48;
 }
 
-.about_container .about_text a i{
+.about_container .about_text a i {
     margin-left: 90px;
 }
 
 
-.about_container .about_img{
+.about_container .about_img {
     width: 50%;
 }
 
-.about_container .about_img img{
+.about_container .about_img img {
     width: 80%;
 }
 
+
+
 /* featured course on refactory academy */
-.ft_courses_cont{
+.ft_courses_cont {
     margin-top: 80px;
 }
 
-.ft_courses_cont p{
+.ft_courses_cont p {
     text-align: center;
     color: #38bfc3;
     font-weight: 500;
     font-size: 18px;
 }
 
-.ft_courses_cont h1{
+.ft_courses_cont h1 {
     text-align: center;
     color: #663367;
     font-size: 28px;
     margin-top: 7px;
 }
 
-.ft_courses_cont .courses_container{
+.ft_courses_cont .courses_container {
     margin-top: 5px;
     display: flex;
     justify-content: center;
@@ -279,22 +298,22 @@ section .banner_context .banner_context_btn a button:hover{
 }
 
 
-.ft_courses_cont .courses_container .course_card{
+.ft_courses_cont .courses_container .course_card {
     width: 22%;
     margin: 20px;
 }
 
-.ft_courses_cont .courses_container .course_card img{
+.ft_courses_cont .courses_container .course_card img {
     width: 100%;
 }
 
-.ft_courses_cont .courses_container .course_card h2{
+.ft_courses_cont .courses_container .course_card h2 {
     margin-top: 10px;
     font-size: 18px;
     color: #663367;
 }
 
-.ft_courses_cont .courses_container .course_card p{
+.ft_courses_cont .courses_container .course_card p {
     text-align: left;
     font-weight: 100;
     margin-top: 7px;
@@ -302,7 +321,7 @@ section .banner_context .banner_context_btn a button:hover{
     color: #000;
 }
 
-.ft_courses_cont .courses_container .course_card a button{
+.ft_courses_cont .courses_container .course_card a button {
     margin-top: 10px;
     background: #C6C628;
     padding: 10px 20px;
@@ -313,13 +332,195 @@ section .banner_context .banner_context_btn a button:hover{
     font-size: 17px;
 }
 
-.ft_courses_cont .courses_container .course_card a button:hover{
+.ft_courses_cont .courses_container .course_card a button:hover {
     background: #0f5395;
 }
 
 
+/* ***************************  */
+/* success rate section  */
+.success_conta{
+    background: #002a48;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.success_conta .success_img{
+    width: 50%;
+}
+
+.success_conta .success_img img{
+    width: 300px;
+    height: 200px;
+    border: 10px solid #fff;
+    transform: rotate(-10deg);
+}
+
+.success_conta .success_img .top_image{
+    transform: rotate(-10deg);
+    z-index: 6;
+    margin-left: -100px;
+}
+
+.success_conta .success_count{
+    width: 50%;
+}
+
+.success_conta .success_count h2{
+    color: #fff;
+    font-size: 26px;
+}
+
+.success_conta .success_count .count_conta{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+.success_conta .success_count .count_conta .count{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.success_conta .success_count .count_conta .count h1{
+    font-size: 42px;
+    color: #fff;
+}
+
+.success_conta .success_count .count_conta .count p{
+    font-size: 22px;
+    color: #fff;
+}
+
+
+/*  **************************************  */
+/* purecount section  */
+.purecounter::after {
+    content: attr(data-purecounter-suffix);
+    margin-left: 0.25rem;
+}
+
+
+/* program section  */
+.program_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background: #f4f7fa;
+    gap: 50px;
+}
+
+.program_container .prog_left_cont{
+    width: 45%;
+}
+
+.program_container .prog_left_cont .prog_decri h1{
+    color: #0f5395;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.program_container .prog_left_cont .prog_decri h2{
+    color: #002a48;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.program_container .prog_left_cont .prog_decri p{
+    margin-top: 8px;
+}
+
+.program_container .prog_left_cont .program_supposers{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.program_container .prog_left_cont .program_supposers img{
+    width: 20%;
+}
+
+.program_container .prog_left_cont .top{
+    margin-top: 30px;
+}
+
+.program_container .prog_left_cont a{
+    padding: 13px;
+    background: #C6C628;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+
+
+.program_container .program_img{
+    width: 50%;
+}
+
+.program_container .program_img img{
+    width: 85%;
+}
+
+
+/* group section */
+.group_container {
+    background-image: url("../imgs/group\ photo\ seminar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.group_container .group_conta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 200px;
+    background: linear-gradient(to top, rgba(35, 147, 151, 0.6), rgba(56, 191, 195, 0));
+}
+
+
+
+.group_container .group_conta img {
+    width: 250px;
+    height: 100px;
+    margin-top: 150px;
+}
+
+.group_container .group_conta h2 {
+    margin-top: 150px;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 40px;
+}
+
+.group_container .group_conta a {
+    margin-top: 150px;
+    margin-left: 30px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #c6c628;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+
+
+
+
 /* footer section */
-footer{
+footer {
     background-image: url("../imgs/footer\ bg.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -327,7 +528,7 @@ footer{
     padding: 60px 180px;
 }
 
-footer .footer_container{
+footer .footer_container {
     /* flex */
     display: flex;
     justify-content: center;
@@ -337,21 +538,21 @@ footer .footer_container{
 
 
 /* footer about us  */
-footer .footer_container .about_us{
+footer .footer_container .about_us {
     width: 20%;
 }
 
-footer .footer_container .about_us img{
+footer .footer_container .about_us img {
     width: 70%;
 }
 
-footer .footer_container .about_us p{
+footer .footer_container .about_us p {
     color: #fff;
     font-size: 16px;
     line-height: 25px;
 }
 
-footer .footer_container .about_us .social_media{
+footer .footer_container .about_us .social_media {
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -360,8 +561,7 @@ footer .footer_container .about_us .social_media{
     margin-left: -40px;
 }
 
-footer .footer_container .about_us .social_media a{
-    background: #C6C628;
+footer .footer_container .about_us .social_media a {
     color: #fff;
     width: 30px;
     height: 30px;
@@ -375,17 +575,17 @@ footer .footer_container .about_us .social_media a{
 
 
 /* footer links */
-footer .footer_container .link_conta{
+footer .footer_container .link_conta {
     width: 20%;
     display: flex;
     flex-direction: column;
 }
 
-footer .footer_container .link_conta h2{
+footer .footer_container .link_conta h2 {
     color: #38bfc3;
 }
 
-footer .footer_container .link_conta a{
+footer .footer_container .link_conta a {
     color: #fff;
     margin-top: 8px;
     text-decoration: none;
@@ -393,18 +593,18 @@ footer .footer_container .link_conta a{
 }
 
 /* contact us */
-footer .footer_container .contact_us{
+footer .footer_container .contact_us {
     width: 30%;
     display: flex;
     flex-direction: column;
 }
 
-footer .footer_container .contact_us h2{
+footer .footer_container .contact_us h2 {
     color: #38bfc3;
     text-decoration: none;
 }
 
-footer .footer_container .contact_us a{
+footer .footer_container .contact_us a {
     color: #fff;
     text-decoration: none;
     margin-top: 15px;
@@ -413,20 +613,20 @@ footer .footer_container .contact_us a{
 
 
 /* visit_us */
-footer .footer_container .visit_us{
+footer .footer_container .visit_us {
     width: 20%;
 }
 
-footer .footer_container .visit_us h2{
+footer .footer_container .visit_us h2 {
     color: #38bfc3;
 }
 
-footer .footer_container .visit_us p{
+footer .footer_container .visit_us p {
     color: #fff;
     line-height: 27px;
 }
 
-footer .footer_container .visit_us a{
+footer .footer_container .visit_us a {
     color: #38bfc3;
     margin-top: 15px;
     text-decoration: none;
@@ -434,11 +634,11 @@ footer .footer_container .visit_us a{
 
 }
 
-footer hr{
+footer hr {
     margin-top: 40px;
 }
 
-footer .copyright{
+footer .copyright {
     text-align: center;
     color: #fff;
     margin-top: 30px;
@@ -451,22 +651,45 @@ footer .copyright{
     right: 30px;
     width: 45px;
     height: 45px;
-    background: #38bfc3;        /* you can change */
+    background: #38bfc3;
+    /* you can change */
     color: #fff;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     font-size: 22px;
-    display: none;           /* hidden default */
+    display: none;
+    /* hidden default */
     justify-content: center;
     align-items: center;
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 9999;
 }
 
-#backToTop:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+
+/* back to top  */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #38bfc3;
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.4s ease;
+}
+
+#backToTop.show {
+    display: flex;
+    opacity: 1;
 }
 
 
@@ -504,3 +727,375 @@ footer .copyright{
 .swiper-slide-active img {
     transform: scale(1.2);
 }
+
+
+/* *************************************  */
+/* media query for Medium Devices (Tablets) */
+@media (max-width: 800px) { 
+    .about_container {
+        padding: 10px;
+    }
+
+    .about_container .about_text {
+    margin-left: 10px;
+    width: 40%;
+}
+
+.about_container .about_text h2 {
+    margin-top: 0px;
+}
+
+.about_container .about_text p {
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+.about_container .about_img {
+    width: 50%;
+}
+
+.about_container .about_img img{
+    width: 100%;
+}
+}
+
+@media (max-width: 768px){
+#nav_background.scrolled {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #000 !important;
+    padding: 20px;
+}
+    nav .logo img {
+    width: 130px;
+    height: 30px;
+    margin-left: 50px;
+}
+    nav .small_screen{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        color: #fff;
+    }
+
+    nav .small_screen .small_closebtn{
+        background: #C6C628;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+
+    
+    nav .nav_links{
+        position: fixed;
+        background: #663367;
+        width: 70%;
+        right: 0;
+        top: 0;
+        height: 100%;
+        z-index: 2999px;
+        padding: 20px;
+        margin-right: -700px;
+    }
+
+    nav .nav_links .ul_nav_links{
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav .nav_links .ul_nav_links li{
+        margin-top: 30px;
+    }
+
+    nav .logo img {
+    margin-left: 20px;
+}
+
+nav .nav_links .ul_nav_links .searchbar{
+    display: none;
+}
+
+    nav .toggle_btn{
+        display: block;
+        background-color: #C6C628;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    nav .toggle_btn i{
+       background: #C6C628;
+       color: #fff !important;
+       
+    }
+
+    .about_container{
+        flex-direction: column;
+    }
+
+    .about_container .about_text{
+        width: 80%;
+    }
+
+
+    /*  */
+    .ft_courses_cont .courses_container {
+        flex-direction: column;
+        padding: 20px;
+}
+
+.ft_courses_cont .courses_container .course_card {
+    width: 100%;
+}
+
+.ft_courses_cont .courses_container .course_card img{
+    width: 100%;
+}
+
+.success_conta{
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.program_container{
+    flex-wrap: wrap;
+}
+
+.group_container .group_conta {
+    flex-wrap: wrap;
+}
+
+footer .footer_container {
+    flex-direction: column;
+}
+
+/* hero section  */
+section .banner_context {
+    margin-top: 350px;
+}
+
+section .banner_context h1 {
+    color: #fff;
+    font-size: 26px;
+}
+
+
+.about_container{
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.about_container .about_text {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.about_container .about_text h2 {
+    margin-top: 20px;
+}
+
+.about_container .about_text p {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.about_container .about_text a {
+    margin-top: 20px;
+}
+
+.about_container .about_img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.about_container .about_img img {
+    width: 100%;
+}
+
+.success_conta{
+    padding: 100px 0px;
+}
+
+.success_conta .success_img{
+    width: 100%;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success_conta .success_img img{
+    width: 300px;
+    height: 200px;
+    border: 10px solid #fff;
+}
+
+.success_conta .success_img .top_image{
+    transform: rotate(-10deg);
+    z-index: 6;
+    margin-left: -100px;
+}
+
+.success_conta .success_count .count_conta .count{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.program_container .prog_left_cont{
+    width: 100%;
+}
+
+.program_container .program_img{
+    width: 100%;
+}
+
+.program_container .program_img img{
+    width: 100%;
+}
+
+footer {
+    padding: 60px 20px;
+}
+
+footer .footer_container .about_us {
+    width: 100%;
+}
+
+footer .footer_container .link_conta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_container .about_us .social_media{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-left: 0px;
+}
+
+footer .footer_container .contact_us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer_container .visit_us {
+    width: 100%;
+}
+}
+
+
+
+@media (max-width: 600px) {
+    section .banner_context {
+    margin-top: 300px;
+}
+
+section .banner_context h1 {
+    color: #fff;
+    /* font-size: 18px; */
+    text-align: center;
+}
+
+section .banner_context p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section .banner_context .banner_context_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.success_conta{
+    padding: 0px;
+    gap: 00px;
+}
+
+.success_conta .success_img{
+    margin-left: -10px;
+}
+
+.success_conta .success_img img{
+    width: 200px;
+    height: 120px;
+    border: 10px solid #fff;
+    transform: rotate(-10deg);
+}
+
+.success_conta .success_img .top_image{
+    margin-top: 40px;
+}
+
+.success_conta .success_count h2{
+    color: #fff;
+    text-align: center;
+}
+
+.success_conta .success_count{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.success_conta .success_count .count_conta{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.program_container{
+    padding: 40px 10px;
+}
+
+.group_container .group_conta {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.group_container .group_conta img {
+    width: 250px;
+    height: 100px;
+    margin-top: 60px;
+}
+
+.group_container .group_conta h2 {
+    margin-top: 60px;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 40px;
+}
+
+.group_container .group_conta a {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+ }
